@@ -1,0 +1,122 @@
+.navbar{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    backdrop-filter:blur(15px);
+
+    background:
+    var(--primary);
+	color: #fff;
+
+}
+
+
+
+.nav-container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:18px 0;
+
+}
+
+
+
+.brand{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-weight:700;
+
+}
+
+
+
+.logo-box{
+
+    width:45px;
+
+    height:45px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:14px;
+
+    background:#fff;
+
+    box-shadow:var(--shadow);
+	color: var(--primary);
+}
+
+
+
+.nav-menu{
+
+    display:flex;
+	background: var(--primary);
+    gap:30px;
+
+}
+
+
+
+.nav-menu a{
+	color:#fff;
+	
+    transition:.3s;
+
+	 font-size:18px;
+    font-weight:600;
+}
+
+
+
+.nav-menu a:hover{
+
+
+	opacity:.8;
+    color:#fff;
+
+}
+
+
+
+.menu-toggle{
+
+    display:none;
+	cursor: pointer;
+    border:none;
+
+    background:transparent;
+	color:#fff;
+    font-size:24px;
+
+}
+.menu-toggle:hover{
+    color: #fff;
+}
+.menu-toggle i{
+    color: inherit;
+}

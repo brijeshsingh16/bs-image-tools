@@ -1,0 +1,84 @@
+/* ================= FOOTER ================= */
+
+.footer{
+
+    margin-top:60px;
+
+    padding:35px 0;
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+
+.footer-container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+
+.footer h3{
+
+    color:white;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.footer p{
+
+    color:white;
+
+    margin-top:8px;
+
+}
+
+
+
+
+/* Mobile Footer */
+
+@media(max-width:700px){
+
+
+.footer{
+
+    padding:30px 15px;
+
+}
+
+
+
+.footer-container{
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:25px;
+
+    text-align:center;
+
+}
+
+
+
+}

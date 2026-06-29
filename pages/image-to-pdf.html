@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--===== Meta Tags ======-->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!--===== Title ======-->
+		<title>Image to PDF Converter - Convert JPG & PNG to PDF | BS Image Tools</title>
+		
+		<!--===== Meta Tags ======-->
+		<meta name="title" content="Image to PDF Converter - Convert JPG, PNG & WEBP to PDF | BS Image Tools">
+		<meta name="description" content="Convert multiple JPG, PNG and WEBP images into a single PDF online for free. Fast, secure and browser-based PDF creator.">
+		<meta name="keywords" content="image to pdf, jpg to pdf, png to pdf, webp to pdf, convert images to pdf, pdf creator online">
+		<meta name="author" content="BS Image Tools">
+		<meta name="robots" content="index, follow">
+		<meta name="language" content="English">
+		<meta name="theme-color" content="#2563eb">
+		<meta name="application-name" content="BS Image Tools">
+
+		<!--===== Open Graph ======-->
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Image to PDF Converter">
+		<meta property="og:description" content="Convert multiple images into one PDF online quickly and securely.">
+		<meta property="og:site_name" content="BS Image Tools">
+
+		<!--===== Twitter ======-->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Image to PDF Converter | BS Image Tools">
+		<meta name="twitter:description" content="Convert JPG, PNG and WEBP images into a PDF online for free.">
+		
+		<!--===== Links ======-->
+		<link rel="stylesheet" href="../css/style.css">
+
+		<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+		
+		<!--===== Script Tags ======-->
+		<script src="../js/navbar.js" defer></script>
+		<script src="../js/footer-year.js" defer></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+		<script src="../js/pdf.js" defer></script>
+		
+		<!--===== Structured Data ======-->
+		<script type="application/ld+json">
+		{
+		  "@context":"https://schema.org",
+		  "@type":"WebApplication",
+		  "name":"Image to PDF Converter",
+		  "applicationCategory":"UtilitiesApplication",
+		  "operatingSystem":"Any",
+		  "description":"Convert multiple JPG, PNG and WEBP images into a PDF online."
+		}
+		</script>
+	</head>
+
+	<body>
+		
+		<!--====== Navbar =======-->
+		<header class="navbar">
+			<div class="nav-container">
+				<!--===== Brand Logo ======-->
+				<a href="../index.html" class="brand">
+					<div class="logo-box">BS</div>
+					<span>
+						Image Tools
+					</span>
+				</a>
+				
+				<!--===== Hamburger Mobile Menu ======-->
+				<button type="button"class="menu-toggle" id="menuToggle"
+				aria-label="Open Menu">
+					<i class="fa-solid fa-bars"></i>
+				</button>
+				
+				<!--===== Navigation For Pages ======-->
+				<nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+					<a href="../index.html">Home</a>
+					<a href="convert.html">Convert</a>
+					<a href="compressor.html">Compress</a>
+					<a href="image-to-pdf.html">Image to PDF</a>
+				</nav>
+			</div>
+		</header>
+
+		<main class="tool-page">
+			<section class="container">
+				<!--==== Main Heading =====-->
+				<h1>Image To PDF</h1>
+				<p>Convert multiple images into a single PDF file.</p>
+
+				<!--===== Multiple Image Upload From User ======-->
+				<div class="upload-box">
+					<label for="pdfInput">
+						<i class="fa-solid fa-file-image"></i>
+						<br>
+						Select Images
+					</label>
+					<input type="file"id="pdfInput"accept="image/*"multiple hidden>
+					<p id="pdfError"></p>
+				</div>
+				
+				<!--====== Uploaded Image View Port =======-->
+				<!--====== Tool Layout ======-->
+				<div class="tool-layout pdf-layout">
+
+					<!--=== Selected Image Viewer ===-->
+					<div class="original-box">
+						<h3>Selected Images</h3>
+						<div id="pdfGallery"class="pdf-gallery"></div>
+					</div>
+
+					<!--=== Format ===-->
+					<div class="controls-box">
+						<div class="controls">
+							<!--=== Format Select Box ===-->
+							<label>Page Size
+								<select id="pdfSize">
+									<option value="a4">A4</option>
+									<option value="letter">Letter</option>
+								</select>
+							</label>
+						</div>
+						
+						<!--===== Remove All Selected Images =====-->
+						<button type="button"class="btn"id="removeAllBtn"hidden disabled>Remove All</button>
+					</div>
+					
+					<!--=== Buttons ===-->
+					<div class="button-box">
+						<button type="button"class="btn"id="createPdfBtn"disabled>Convert To PDF</button>
+						<button type="button"class="btn"id="downloadBtn"hidden disabled>Download PDF</button>
+
+						<div id="loader" hidden>Generating PDF...</div>
+					</div>
+
+					<!--=== PDF Result ===-->
+					<div class="result-box">
+						<h3>PDF Preview</h3>
+						<div id="pdfPreview"></div>
+						<p id="pdfInfo"></p>
+					</div>
+				</div>
+
+			</section>
+		</main>
+
+		<!--====== Footer =======-->
+		<footer class="footer">
+			<div class="footer-container">
+				
+				<!--====== Left Side =======-->
+				<div>
+					<h3>BS Image Tools</h3>
+					<p>Convert • Compress • PDF Tools</p>
+				</div>
+				<!--====== Right Side =======-->
+				<div>
+					<p>© <span id="year"></span> BS Image Tools</p>
+					<p>All Rights Reserved.</p>
+				</div>
+				
+			</div>
+		</footer>
+		
+	</body>
+</html>

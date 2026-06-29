@@ -1,0 +1,179 @@
+@import "navbar.css";
+@import "footer.css";
+@import "tools.css";
+@import "responsive.css";
+
+
+:root{
+
+    --cream:#f7f1e6;
+    --card:#ffffff66;
+    --primary:#6c4cff;
+    --dark:#252525;
+
+    --shadow:
+    0 15px 40px rgba(0,0,0,.12);
+
+    --radius:22px;
+
+}
+
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body{
+
+    font-family:
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+    background:
+    var(--cream);
+
+    color:
+    var(--dark);
+
+    min-height:100vh;
+
+}
+
+
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+
+
+.container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+
+
+h1,h2,h3{
+
+    font-weight:700;
+
+}
+
+
+
+.hero{
+
+    padding:
+    100px 0 50px;
+
+    text-align:center;
+
+}
+
+
+
+.hero h1{
+
+    font-size:
+    clamp(2.2rem,5vw,4rem);
+
+}
+
+
+
+.hero p{
+
+    margin-top:20px;
+
+    font-size:1.2rem;
+
+    line-height:1.7;
+
+}
+
+
+
+.btn{
+
+    display:inline-block;
+
+    background:
+    var(--primary);
+
+    color:white;
+
+    padding:
+    12px 25px;
+
+    border-radius:30px;
+
+    transition:.3s;
+
+}
+
+
+
+.btn:hover{
+
+    transform:translateY(-3px);
+
+    opacity:.9;
+
+}
+/* ===== Disabled Buttons ===== */
+
+.btn:disabled,
+button:disabled{
+
+    background:#ece8ff !important;
+
+    color:#8c82c7 !important;
+
+    border:1px solid #d8d1ff !important;
+
+    cursor:not-allowed !important;
+
+    pointer-events:none !important;
+
+    opacity:1 !important;
+
+    box-shadow:none !important;
+
+}
+
+
+/* ===== Disabled Select ===== */
+
+select:disabled{
+
+    background:#f8f6ff !important;
+
+    color:#8c82c7 !important;
+
+    border:1px solid #d8d1ff !important;
+
+    cursor:not-allowed !important;
+
+    opacity:1 !important;
+
+}
